@@ -5,27 +5,27 @@ return {
     cmd = "Harpoon",
     keys = {
       {
-        "<leader>hm",
+        "<leader>hh",
         function()
           require("harpoon.mark").add_file()
         end,
         desc = "Add file to harpoon",
       },
       {
-        "<leader>hh",
+        "<leader>hm",
         function()
           require("harpoon.ui").toggle_quick_menu()
         end,
         desc = "Toggle harpoon menu",
       },
       {
-        "<leader>hj",
+        "<leader>hn",
         function()
           require("harpoon.ui").nav_next()
         end,
       },
       {
-        "<leader>hk",
+        "<leader>hb",
         function()
           require("harpoon.ui").nav_prev()
         end,
