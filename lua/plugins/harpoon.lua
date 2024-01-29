@@ -19,13 +19,13 @@ return {
         desc = "Toggle harpoon menu",
       },
       {
-        "<leader>hn",
+        "=",
         function()
           require("harpoon.ui").nav_next()
         end,
       },
       {
-        "<leader>hb",
+        "-",
         function()
           require("harpoon.ui").nav_prev()
         end,
