@@ -3,7 +3,6 @@ return {
   opts = {
     ensure_installed = {
       "eslint_d",
-      "prettierd",
       "tailwindcss-language-server",
     },
   },
