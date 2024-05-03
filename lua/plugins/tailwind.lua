@@ -1,4 +1,4 @@
-return {
+local disable = {
   {
     "NvChad/nvim-colorizer.lua",
     opts = {
@@ -22,3 +22,4 @@ return {
     end,
   },
 }
+return {}

@@ -8,8 +8,8 @@ if true then return {
     priority = 1000,
     lazy = true,
     opts = {
-      -- dark: mocha light: latte
-      flavour = "frappe",
+      -- dark: frappe light: latte
+      flavour = "latte",
       highlight_overrides = {
         all = function(colors)
             return {
@@ -52,10 +52,20 @@ if true then return {
       },
     },
   },
+  {"rktjmp/lush.nvim"},
+  {
+    "mcchrish/zenbones.nvim",
+    requires = "rktjmp/lush.nvim",
+    init = function()
+      vim.cmd([[set background=light]])
+    end,
+  },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      -- colorscheme = "catppuccin",
+      -- colorscheme = "yang",
+      colorscheme = "zenbones"
     },
   }
 } end
