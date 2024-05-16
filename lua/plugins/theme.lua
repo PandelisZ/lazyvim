@@ -57,15 +57,15 @@ if true then return {
     "mcchrish/zenbones.nvim",
     requires = "rktjmp/lush.nvim",
     init = function()
-      vim.cmd([[set background=light]])
+      //vim.cmd([[set background=light]])
     end,
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "catppuccin",
+       colorscheme = "catppuccin",
       -- colorscheme = "yang",
-      colorscheme = "zenbones"
+      -- colorscheme = "zenbones"
     },
   }
 } end
