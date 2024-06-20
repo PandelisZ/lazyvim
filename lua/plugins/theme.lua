@@ -9,7 +9,7 @@ if true then return {
     lazy = true,
     opts = {
       -- dark: frappe light: latte
-      flavour = "latte",
+      flavour = "frappe",
       highlight_overrides = {
         all = function(colors)
             return {
@@ -57,7 +57,7 @@ if true then return {
     "mcchrish/zenbones.nvim",
     requires = "rktjmp/lush.nvim",
     init = function()
-      //vim.cmd([[set background=light]])
+      --vim.cmd([[set background=light]])
     end,
   },
   {
