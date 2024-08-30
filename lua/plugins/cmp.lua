@@ -1,6 +1,9 @@
 return {
   {
     "hrsh7th/nvim-cmp",
+    dependencies = {
+      "supermaven-inc/supermaven-nvim",
+    },
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
       local has_words_before = function()
@@ -11,11 +14,7 @@ return {
 
       local cmp = require("cmp")
 
-      cmp.setup({
-        sources = {
-          { name = "supermaven" },
-        },
-      })
+      table.insert(opts.sources, { name = "supermaven" })
 
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<Tab>"] = cmp.mapping(function(fallback)
