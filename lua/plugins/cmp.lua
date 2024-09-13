@@ -1,5 +1,19 @@
 return {
   {
+    "supermaven-inc/supermaven-nvim",
+    config = function()
+      require("supermaven-nvim").setup({
+        keymaps = {
+          accept_suuggestion = "<Tab>",
+          clear_suggestion = "<C-]>",
+          accept_word = "<C-j>",
+        },
+        disable_inline_completion = false, -- disables inline completion for use with cmp
+        disable_keymaps = true, -- disables built in keymaps for more manual control
+      })
+    end,
+  },
+  {
     "hrsh7th/nvim-cmp",
     dependencies = {
       "supermaven-inc/supermaven-nvim",
@@ -11,11 +25,8 @@ return {
         local line, col = unpack(vim.api.nvim_win_get_cursor(0))
         return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
       end
-
       local cmp = require("cmp")
-
       table.insert(opts.sources, { name = "supermaven" })
-
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
