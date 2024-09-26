@@ -53,6 +53,7 @@ if true then return {
     },
   },
   {"rktjmp/lush.nvim"},
+  { "savq/melange-nvim" },
   {
     "mcchrish/zenbones.nvim",
     requires = "rktjmp/lush.nvim",
@@ -65,7 +66,8 @@ if true then return {
     opts = {
       -- colorscheme = "catppuccin",
       -- colorscheme = "yang",
-       colorscheme = "zenbones"
+       -- colorscheme = "zenbones"
+      colorscheme = "melange"
     },
   }
 } end

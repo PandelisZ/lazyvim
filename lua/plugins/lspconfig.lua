@@ -2,9 +2,16 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
-      servers = { eslint = {} },
+      servers = { eslint = {
+        settings = {
+          workingDirectories = { mode = "auto" },
+        },
+      } },
       inlay_hints = { enabled = false },
       setup = {
+        rust_analyzer = function()
+          return true
+        end,
         eslint = function()
           require("lazyvim.util").lsp.on_attach(function(client)
             if client.name == "eslint" then
