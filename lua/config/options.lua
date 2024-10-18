@@ -3,3 +3,9 @@
 -- Add any additional options here
 
 vim.opt.iskeyword:append("-") -- treat dash separated words as a word text object
+
+-- If no prettier config file is found, the formatter will not be used
+vim.g.lazyvim_prettier_needs_config = true
+
+-- php
+vim.g.lazyvim_php_lsp = "intelephense"

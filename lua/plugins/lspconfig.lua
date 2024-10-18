@@ -12,6 +12,12 @@ return {
         rust_analyzer = function()
           return true
         end,
+        prettierd = function()
+          return false
+        end,
+        prettier = function()
+          return false
+        end,
         eslint = function()
           require("lazyvim.util").lsp.on_attach(function(client)
             if client.name == "eslint" then
