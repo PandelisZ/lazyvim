@@ -9,3 +9,9 @@ vim.g.lazyvim_prettier_needs_config = true
 
 -- php
 vim.g.lazyvim_php_lsp = "intelephense"
+
+-- Disable clipboard sync
+vim.opt.clipboard = ""
+
+-- Slow shutdown time
+vim.opt.fsync = false
