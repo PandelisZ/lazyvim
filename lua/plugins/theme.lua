@@ -1,7 +1,10 @@
 -- since this is just an example spec, don't actually load anything here and return an empty spec
 -- stylua: ignore
 if true then return {
-
+  {"rose-pine/neovim"},
+  {"sainnhe/gruvbox-material"},
+  {"nyoom-engineering/oxocarbon.nvim"},
+  {"ribru17/bamboo.nvim"},
   {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -58,7 +61,7 @@ if true then return {
     "mcchrish/zenbones.nvim",
     requires = "rktjmp/lush.nvim",
     init = function()
-      vim.cmd([[set background=light]])
+      -- vim.cmd([[set background=light]])
     end,
   },
   {
@@ -67,7 +70,8 @@ if true then return {
       -- colorscheme = "catppuccin",
       -- colorscheme = "yang",
        -- colorscheme = "zenbones"
-      colorscheme = "melange"
+      --colorscheme = "melange"
+      colorscheme = "oxocarbon"
     },
   }
 } end
