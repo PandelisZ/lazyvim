@@ -15,3 +15,6 @@ vim.opt.clipboard = ""
 
 -- Slow shutdown time
 vim.opt.fsync = false
+
+-- fuck off animations
+vim.g.snacks_animate = false
