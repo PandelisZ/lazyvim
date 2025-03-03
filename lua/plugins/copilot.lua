@@ -20,7 +20,7 @@ return {
     },
     opts = {
       debug = false,
-      model = "gpt-4o",
+      model = "soonent 1.5",
       show_help = true,
       prompts = {
         Explain = {
