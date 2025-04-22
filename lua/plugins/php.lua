@@ -1,16 +1,4 @@
-return {
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "golangci-lint",
-        "intelephense",
-        "phpstan",
-        "pint",
-        "tailwindcss-language-server",
-      },
-    },
-  },
+local disabled = {
   {
     -- Set Laravel Pint as the default PHP formatter with PHP CS Fixer as a fall back.
     "stevearc/conform.nvim",
@@ -31,3 +19,4 @@ return {
     },
   },
 }
+return {}
