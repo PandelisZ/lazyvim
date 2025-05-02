@@ -18,3 +18,6 @@ vim.opt.fsync = false
 
 -- fuck off animations
 vim.g.snacks_animate = false
+
+vim.g.python3_host_prog = "/Users/pz/w/cosine/.venv/bin/python"
+vim.g.python_host_prog = "/Users/pz/w/cosine/.venv/bin/python"
