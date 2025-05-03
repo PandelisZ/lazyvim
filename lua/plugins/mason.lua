@@ -5,7 +5,6 @@ return {
       ensure_installed = {
         "golangci-lint",
         "tailwindcss-language-server",
-        "buf",
       },
     },
   },
