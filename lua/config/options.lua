@@ -7,9 +7,6 @@ vim.opt.iskeyword:append("-") -- treat dash separated words as a word text objec
 -- If no prettier config file is found, the formatter will not be used
 vim.g.lazyvim_prettier_needs_config = true
 
--- php
-vim.g.lazyvim_php_lsp = "intelephense"
-
 -- Disable clipboard sync
 vim.opt.clipboard = ""
 
@@ -21,3 +18,6 @@ vim.g.snacks_animate = false
 
 vim.g.python3_host_prog = "/Users/pz/w/cosine/.venv/bin/python"
 vim.g.python_host_prog = "/Users/pz/w/cosine/.venv/bin/python"
+
+vim.g.lazyvim_python_lsp = "pyright"
+vim.g.lazyvim_python_ruff = "ruff"
