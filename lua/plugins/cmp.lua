@@ -33,7 +33,6 @@ return {
       },
     },
     dependencies = { "supermaven-inc/supermaven-nvim" },
-    ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
       -- table.insert(opts.sources, 1, { name = "supermaven", priority = 100 })
     end,
